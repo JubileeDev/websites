@@ -1,0 +1,327 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, main, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    border: 0;
+    margin: 0;
+    padding: 0;
+  }
+  
+  article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section {
+    display: block;
+  }
+  
+  [hidden] {
+    display: none;
+  }
+  
+  body {
+    line-height: 1;
+  }
+  
+  menu, ol, ul {
+    list-style: none;
+  }
+  
+  blockquote, q {
+    quotes: none;
+  }
+  
+  blockquote:before, blockquote:after, q:before, q:after {
+    content: "";
+    content: none;
+  }
+  
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+  
+  html {
+    width: 100%;
+    height: 100%;
+  }
+  
+  body {
+    box-sizing: border-box;
+    padding: 4rem 4rem 0;
+    font-family: Inter, sans-serif;
+  }
+  
+  @media screen and (width <= 700px) {
+    body {
+      padding: 1.5rem 1rem;
+    }
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  @media screen and (width <= 700px) {
+    .hidden {
+      display: none;
+    }
+  }
+  
+  @media screen and (width >= 701px) {
+    .hiddenicon {
+      display: none;
+    }
+  }
+  
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    display: flex;
+  }
+  
+  @media screen and (width <= 700px) {
+    header .burgerMenu {
+      z-index: 1;
+      background-color: #fff;
+      width: 70%;
+      height: 100vh;
+      position: fixed;
+      top: 1%;
+      right: 1%;
+    }
+  }
+  
+  header .burgerMenu .fa-xmark {
+    margin: 1.5rem;
+  }
+  
+  header nav {
+    display: flex;
+  }
+  
+  @media screen and (width <= 700px) {
+    header nav {
+      flex-direction: column;
+      margin: 10rem 0;
+    }
+  }
+  
+  header nav a {
+    color: #5d5f79;
+    padding: 1.5rem;
+  }
+  
+  @media screen and (width <= 700px) {
+    header nav a {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+  }
+  
+  header nav a:hover {
+    color: #f15e50;
+  }
+  
+  .container {
+    display: flex;
+  }
+  
+  @media screen and (width <= 700px) {
+    .container {
+      flex-direction: column;
+    }
+  }
+  
+  .container__left {
+    width: 100%;
+  }
+  
+  .container__left .img {
+    background-image: url("image-web-3-desktop.5fe31a42.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 60%;
+  }
+  
+  @media screen and (width <= 700px) {
+    .container__left .img {
+      background-image: url("image-web-3-mobile.d4dc8d64.jpg");
+      background-size: contain;
+      height: 400px;
+    }
+  }
+  
+  .container__left--bottom {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 2rem;
+    display: flex;
+  }
+  
+  @media screen and (width <= 700px) {
+    .container__left--bottom {
+      flex-direction: column;
+      padding: 0;
+    }
+  }
+  
+  .container__left--bottom--title {
+    width: 50%;
+    font-size: 4rem;
+    font-weight: 800;
+  }
+  
+  @media screen and (width <= 700px) {
+    .container__left--bottom--title {
+      width: 100%;
+      font-size: 2.9rem;
+    }
+  }
+  
+  .container__left--bottom--paragraph {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 50%;
+    display: flex;
+  }
+  
+  @media screen and (width <= 700px) {
+    .container__left--bottom--paragraph {
+      width: 100%;
+      margin-top: 1rem;
+    }
+  }
+  
+  .container__left--bottom--paragraph p {
+    overflow-wrap: break-word;
+    margin-bottom: 1.5rem;
+    padding-right: .5rem;
+    line-height: 1.5rem;
+  }
+  
+  .container__left--bottom--paragraph .btn {
+    color: #00001a;
+    letter-spacing: .2rem;
+    text-transform: uppercase;
+    background-color: #f15e50;
+    border: none;
+    padding: 1.2rem 1.5rem;
+    font-weight: 800;
+    display: inline-block;
+  }
+  
+  .container__left--bottom--paragraph .btn:hover {
+    color: #fffdfa;
+    background-color: #00001a;
+  }
+  
+  .container__right {
+    background-color: #00001a;
+    width: 40%;
+    margin: 0 1.5rem;
+    padding: 1.5rem;
+  }
+  
+  @media screen and (width <= 700px) {
+    .container__right {
+      width: 85%;
+      margin: 3rem auto;
+    }
+  }
+  
+  .container__right--title {
+    color: #e9ab53;
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+  
+  .container__right--paragraph {
+    color: #c5c6ce;
+    border-bottom: 1px solid #5d5f79;
+    padding: 2rem 0;
+  }
+  
+  .container__right--paragraph:nth-child(4) {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+  
+  .container__right--paragraph a {
+    color: #fffdfa;
+    margin: 1rem 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+    display: block;
+  }
+  
+  .container__right--paragraph a:hover {
+    color: #e9ab53;
+  }
+  
+  .container__right--paragraph span {
+    line-height: 1.5rem;
+  }
+  
+  aside {
+    margin-top: 3rem;
+    display: flex;
+  }
+  
+  @media screen and (width <= 700px) {
+    aside {
+      flex-direction: column;
+    }
+  }
+  
+  aside:first-child {
+    margin-left: 0;
+  }
+  
+  aside article {
+    flex-direction: row;
+    margin-left: 1rem;
+    display: flex;
+  }
+  
+  @media screen and (width <= 700px) {
+    aside article {
+      margin: 1rem 0;
+    }
+  }
+  
+  aside article img {
+    width: 25%;
+    height: 95%;
+  }
+  
+  aside article section {
+    flex-direction: column;
+    margin-left: 1rem;
+    display: flex;
+  }
+  
+  aside article section span {
+    color: #f15e50;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  aside article section a {
+    color: #00001a;
+    margin: 1rem 0;
+    font-size: 1.4rem;
+    font-weight: 800;
+  }
+  
+  aside article section a:hover {
+    color: #f15e50;
+  }
+  
+  aside article section p {
+    line-height: 1.5rem;
+  }
+  /*# sourceMappingURL=index.5499756a.css.map */
+  
