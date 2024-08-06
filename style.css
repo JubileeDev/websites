@@ -1,0 +1,38 @@
+:root{
+    --yellow-color: #FFC31F;
+    --red-color:  #ee6352;
+}
+
+.nav{
+    background-color: #ffc21f;
+  height: 100px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 1440px;
+}
+
+nav ul{
+    color: #ffffff;
+    font-size: smaller;
+    float: right;
+    font-weight: 100;
+    height: 32px;
+    line-height: normal;
+    position: absolute;
+    top: 33px;
+    padding-right: 15px;
+}
+
+li{
+    list-style-type: none;
+    display: inline;
+    float: right;
+}
+    
+
+.logo{
+    font-size: smaller;
+    float: left;
+    padding-top: 7px;
+}
